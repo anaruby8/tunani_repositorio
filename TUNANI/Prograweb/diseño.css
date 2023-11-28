@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  button {
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed; /* Fijar el ancho de la tabla */
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    position: relative; /* Agregamos posición relativa para la columna de Productos */
+  }
+  
+  th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Estilos para la columna de Productos (tercera columna) */
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 20%; /* Ancho para la columna de Productos (la mitad de las otras) */
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 28px); /* Ajustar el ancho del input para dejar espacio al símbolo de dinero */
+    padding-left: 24px; /* Espacio para el símbolo de dinero */
+  }
+  
+  th:nth-child(3)::before,
+  td:nth-child(3)::before {
+    content: "$"; /* Símbolo de dólar antes del input */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+    color: #555; /* Color del símbolo de dólar */
+  }
+/* Estilos previos (como se mostró anteriormente) */
+
+/* Estilos para el botón flotante */
+#btnFlotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 999; /* Asegura que esté sobre otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  #btnFlotante:hover {
+    background-color: #0056b3;
+  }
+    
