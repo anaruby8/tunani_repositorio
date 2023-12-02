@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#" class="boton-asistencia">
+        <img src="img/soporteFlotante533D8B.png" alt="Asistencia">
+    </a>
+    <header class="fondo">
+        <div class="top">
+            <img src="img/LogoNegro.png" alt="Logo" class="logo-grande">
+            <img src="img/lenguaje.png" alt="Lenguaje">
+            <h2 href="#" class="titulo2">Principal</h2>
+        </div>
+        <div>
+            <a href="index.html" class="titulo">Tunani</a>
+        </div>
+        <div class="busqueda-principal">
+            <input type="text" placeholder="Buscar artesanía...">
+            <div class="busqueda-principal">
+                <button class="ingresar" id="miBoton">Ingresar</button>
+            </div>
+        </div>
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor cuerpo">
+            <div class="styled-select">
+                <select class="categorias-enlace">
+                    <option value="#" selected>Categorías </option>
+                    <option value="#">Barro</option>
+                    <option value="#">Cobre</option>
+                    <option value="#">Manta</option>
+                    <option value="#">Porcelana</option>
+                    <!-- Agrega más elementos 'option' según tus categorías -->
+                </select>
+            </div>
+            <a href="#">Accesorios</a>
+            <a href="#">Ropa</a>
+            <a href="#">Calzado</a>
+            <a href="#">Bolsos</a>
+            <a href="#">Muebles</a>
+            <a href="#">Hogar</a>
+            <a href="#">Decoración</a>
+        </nav>
+    </div>
+    <main>
+        <div class="busqueda-secundaria">
+            <input type="text" class="amplio" placeholder="Camisa bordada, cesto tejido, silla de madera...">
+            <input type="submit" value="Buscar">
+        </div>
+        <div class="botones">
+            <section class="boton1">
+                <img src="img/imgsociedades.jpg" alt="Sociedades" class="imagen-opacidad">
+                <span class="etiqueta1">Sociedades</span>
+            </section>
+            <section class="boton2">
+                <img src="img/imgnodes.jpg" alt="Nodes" class="imagen-opacidad">
+                <span class="etiqueta2">Nodes</span>
+            </section>
+            <section class="boton3">
+                <img src="img/imgartesanos.jpg" alt="Artesanos" class="imagen-opacidad">
+                <span class="etiqueta3">Artesanos</span>
+            </section>
+        </div>
+        <div class="anuncio">
+            <img src="img/pub1.jpg" alt="publicidad" id="imagenAnuncio">
+        </div>
+        <script>
+            cambiarImagenPublicidad();
+        </script>
+        <div class="articulos">
+            <section>
+                <img src="img/vestido.jpg" alt="Camisa">
+            </section>
+            <section>
+                <img src="img/tarro.jpg" alt="Tarro">
+            </section>
+            <section>
+                <img src="img/jarra.jpg" alt="Jarra">
+            </section>
+            <section>
+                <img src="img/tarro.jpg" alt="Calavera">
+            </section>
+            <section>
+                <img src="img/vestido.jpg" alt="Vestido">
+            </section>
+        </div>
+
+        <div class="descripciones">
+            <section>
+                <p>Nombre de la prenda</p>
+                <img src="img/corazonNegro.png" alt="Favoritos" class="imagen-favorito" data-hover-src="img/corazonMorado.png">
+            </section>
+            <section>
+                <p>Nombre de la prenda</p>
+                <img src="img/corazonNegro.png" alt="Favoritos" class="imagen-favorito" data-hover-src="img/corazonMorado.png">
+            </section>
+            <section>
+                <p>Nombre de la prenda</p>
+                <img src="img/corazonNegro.png" alt="Favoritos" class="imagen-favorito" data-hover-src="img/corazonMorado.png">
+            </section>
+            <section>
+                <p>Nombre de la prenda</p>
+                <img src="img/corazonNegro.png" alt="Favoritos" class="imagen-favorito" data-hover-src="img/corazonMorado.png">
+            </section>
+            <section>
+                <p>Nombre de la prenda</p>
+                <img src="img/corazonNegro.png" alt="Favoritos" class="imagen-favorito" data-hover-src="img/corazonMorado.png">
+            </section>
+        </div>
+        <script>
+            cambioImagenesCorazon();
+        </script>
+    </main>
+</body>
+
+<footer class="piepag">
+    <section class="piebloque1">
+        <div>
+            <img src="img/LogoBlanco.png" alt="Logo">
+            <h2>Tunani</h2>
+        </div>
+        <p>Somos una empresa comprometida <br> con México y sus tradiciones. <br>¡Únete a nuestro equipo!</p>
+    </section>
+    <section class="piebloque2">
+        <h2>¿Tienes alguna duda <br>o sugerencia? Contáctanos.</h2>
+        <p class="styled-list">58893 Morelia Michoacán, México</p>
+        <p class="styled-list">(+52) 443 258 6158</p>
+        <p class="styled-list">Artunani@hotmail.com</p>
+    </section>
+    <section class="piebloque3">
+        <h2>Nuestras redes sociales</h2>
+        <div class="pad">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32"
+                height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+            <p>tunani.art</p>
+        </div>
+        <br>
+        <div class="pad">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="32"
+                height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+            </svg>
+            <p>tunani_art</p>
+        </div>
+    </section>
+</footer>
+<script src="js/funciones.js"></script>
+
+</html>

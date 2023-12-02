@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="css/styleslogin.css" rel="stylesheet">
+    <title class="titulo">TUNANI || REGISTRO E INICIO SESIÓN</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <p> </p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#" class="link active">Inicio</a></li>
+                <li><a href="#" class="link">Acerca de Nosostros</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="login.html" id="loginBtn">
+                <img src="img\USUARIO.png" alt="Inicia Sesión" />
+            </a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una Cuenta</h2>
+                <div class="icons">
+                    <a href="https://accounts.google.com/signin">
+                        <i class='bx bxl-google'></i>
+                    </a>
+                </div>
+
+                <p>o usa tu email para registrarte</p>
+                <form class="form">
+                    <label>
+                        <i class='bx bx-user'></i>
+                        <input type="text" placeholder="Nombre Completo">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Correo Electronico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡¡Bienvenido nuevamente!!</h2>
+                <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <p>o Iniciar Sesión con una cuenta</p>
+                <!-- Agrega este formulario dentro del contenedor de inicio de sesión (.login) -->
+                <form class="form" id="loginForm">
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" id="emailInput" placeholder="Correo Electrónico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" id="passwordInput" placeholder="Contraseña">
+                    </label>
+                    <div class="two">
+                        <label><a href="#" style="color: orange;">¿Olvidaste tu contraseña?</a></label>
+                    </div>
+                    <input type="submit" value="Iniciar Sesión">
+                </form>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/funcioneslogin.js"></script>
+</body>
+
+</html>
